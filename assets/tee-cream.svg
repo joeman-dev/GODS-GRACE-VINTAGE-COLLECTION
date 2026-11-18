@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 450">
+    <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f0e5"/><stop offset="1" stop-color="#ded2bd"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity=".16"/></filter></defs>
+    <rect width="430" height="450" rx="22" fill="url(#bg)"/>
+    <circle cx="335" cy="85" r="48" fill="#d6a329" opacity=".12"/>
+    <g filter="url(#s)"><path d="M135 95 L185 65 Q215 105 245 65 L295 95 L365 155 L325 225 L285 205 L285 385 L145 385 L145 205 L105 225 L65 155 Z" fill="#F1E9D9" stroke="#b9a16b" stroke-width="4"/><path d="M185 65 Q215 115 245 65" fill="none" stroke="#b9a16b" stroke-width="4"/></g>
+    <text x="215" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="900" letter-spacing="3" fill="#171717">VINTAGE</text>
+    <text x="215" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="5" fill="#74664d">GG VINTAGE COLLECTION</text>
+    </svg>

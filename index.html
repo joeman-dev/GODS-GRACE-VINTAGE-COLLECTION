@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover timeless streetwear and premium everyday fashion at GOD'S GRACE Vintage Collection.">
+  <meta name="theme-color" content="#090909">
+
+  <title>GOD'S GRACE Vintage Collection | Your Style, Your Identity</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement">
+    PREMIUM STREETWEAR <span>·</span> YOUR STYLE, YOUR IDENTITY, YOUR STATEMENT
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <a class="brand" href="#home" aria-label="GOD'S GRACE Vintage Collection home">
+
+      <img
+        class="brand-logo"
+        src="assets/gg-brand-emblem.jpg"
+        alt="GOD'S GRACE Vintage Collection logo"
+      >
+
+      <span class="brand-copy">
+        <strong>GOD'S GRACE</strong>
+        <small>VINTAGE COLLECTION</small>
+      </span>
+
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mainNav"
+      type="button"
+    >
+      ☰
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" id="openCart" type="button" aria-label="Open shopping bag">
+      <span class="bag-icon">♧</span>
+      <span>Bag</span>
+      <b id="cartCount">0</b>
+    </button>
+
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+      <img
+        class="hero-art"
+        src="assets/gg-vintage-campaign.jpeg"
+        alt="GOD'S GRACE Vintage Collection campaign artwork"
+      >
+
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-label">
+          <span class="hero-line"></span>
+          <p class="eyebrow">THE GOD'S GRACE SIGNATURE COLLECTION</p>
+          <span class="hero-line"></span>
+        </div>
+
+        <h1>
+          WEAR YOUR<br>
+          <em>IDENTITY.</em>
+        </h1>
+
+        <p class="hero-sub">
+          More than fashion. A statement of individuality,
+          confidence and timeless style.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#shop">
+            EXPLORE THE COLLECTION <span>↗</span>
+          </a>
+        </div>
+
+        <p class="hero-note">EST. IN STYLE · DEFINED BY YOU</p>
+
+      </div>
+
+      <div class="hero-stamp">
+        <span>GG</span>
+        <small>VINTAGE<br>COLLECTION</small>
+      </div>
+
+      <div class="hero-bottom">
+        <span>TIMELESS STYLE</span>
+        <span>QUALITY · IDENTITY · ELEGANCE</span>
+        <span>GOD'S GRACE COLLECTION</span>
+      </div>
+
+    </section>
+
+    <!-- SHOP SECTION -->
+    <section class="shop-section section-wrap" id="shop">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow gold-text">FIND YOUR SIGNATURE</p>
+          <h2>Shop the collection<span>.</span></h2>
+        </div>
+
+        <p>Everyday essentials with a vintage edge.</p>
+
+      </div>
+
+      <div class="shop-tools">
+
+        <div class="filter-tabs" id="filters">
+          <button class="filter active" data-filter="all" type="button">All pieces</button>
+          <button class="filter" data-filter="t-shirts" type="button">T-shirts</button>
+          <button class="filter" data-filter="hoodies" type="button">Hoodies</button>
+          <button class="filter" data-filter="accessories" type="button">Accessories</button>
+        </div>
+
+        <label class="search-box">
+          <span>⌕</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search the collection..."
+            aria-label="Search products"
+          >
+        </label>
+
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+    </section>
+
+    <!-- CAMPAIGN SECTION -->
+    <section class="campaign">
+
+      <div class="campaign-copy">
+
+        <p class="eyebrow">THE VINTAGE VIBE</p>
+
+        <h2>
+          Not just what<br>
+          you wear. <em>Who you are.</em>
+        </h2>
+
+        <p>
+          Bring confidence to the everyday with signature
+          GOD'S GRACE pieces.
+        </p>
+
+        <a href="#shop" class="text-link">
+          DISCOVER YOUR LOOK <span>→</span>
+        </a>
+
+      </div>
+
+      <div class="campaign-art">
+        <img
+          src="assets/gg-brand-emblem.jpg"
+          alt="GOD'S GRACE Vintage Collection brand emblem"
+        >
+      </div>
+
+    </section>
+
+    <!-- BRAND STORY -->
+    <section class="story-section section-wrap" id="story">
+
+      <p class="eyebrow gold-text">THE GOD'S GRACE STANDARD</p>
+
+      <h2>Wear the vintage vibe.</h2>
+
+      <p>
+        GOD'S GRACE Vintage Collection is about expressing your identity
+        with confidence. Discover standout pieces, timeless details and
+        a style that feels unmistakably yours.
+      </p>
+
+      <a href="#shop" class="text-link">
+        EXPLORE OUR COLLECTION <span>→</span>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <div class="footer-main">
+
+      <a class="brand footer-brand" href="#home">
+
+        <img
+          class="brand-logo"
+          src="assets/gg-brand-emblem.jpg"
+          alt="GOD'S GRACE Vintage Collection logo"
+        >
+
+        <span class="brand-copy">
+          <strong>GOD'S GRACE</strong>
+          <small>VINTAGE COLLECTION</small>
+        </span>
+
+      </a>
+
+      <p>Your style. Your identity. Your statement.</p>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#story">Our Story</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> GOD'S GRACE Vintage Collection</span>
+      <span>Designed with a signature gold touch.</span>
+    </div>
+
+  </footer>
+
+  <!-- SHARED BACKGROUND OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <section
+    class="product-modal"
+    id="productModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="detailName"
+    aria-hidden="true"
+    inert
+  >
+
+    <div class="product-modal-content">
+
+      <button
+        class="product-modal-close"
+        id="closeProductModal"
+        type="button"
+        aria-label="Close product details"
+      >
+        &times;
+      </button>
+
+      <div class="product-modal-image">
+        <img id="detailImage" src="" alt="">
+      </div>
+
+      <div class="product-modal-info">
+
+        <p class="product-category" id="detailCategory"></p>
+
+        <h2 id="detailName"></h2>
+
+        <p class="product-modal-price" id="detailPrice"></p>
+
+        <p class="product-modal-description" id="detailDescription"></p>
+
+        <!-- SIZE SELECTION -->
+        <div class="variant-section" id="sizeSection">
+
+          <h4>Select Size</h4>
+
+          <div class="variant-options" id="sizeOptions"></div>
+
+        </div>
+
+        <!-- COLOUR SELECTION -->
+        <div class="variant-section">
+
+          <h4>Select Colour</h4>
+
+          <div class="variant-options" id="colorOptions"></div>
+
+        </div>
+
+        <!-- QUANTITY -->
+        <div class="variant-section">
+
+          <h4>Quantity</h4>
+
+          <div class="detail-quantity">
+
+            <button
+              type="button"
+              id="detailQtyMinus"
+              aria-label="Decrease quantity"
+            >
+              −
+            </button>
+
+            <span id="detailQuantity">1</span>
+
+            <button
+              type="button"
+              id="detailQtyPlus"
+              aria-label="Increase quantity"
+            >
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+        <button
+          type="button"
+          class="detail-add-to-cart"
+          id="detailAddToCart"
+        >
+          ADD TO BAG
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SHOPPING CART DRAWER -->
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-label="Shopping bag"
+    aria-hidden="true"
+    inert
+  >
+
+    <div class="drawer-head">
+
+      <div>
+        <p class="eyebrow gold-text">YOUR SELECTION</p>
+        <h2>Your bag</h2>
+      </div>
+
+      <button class="icon-button" id="closeCart" type="button" aria-label="Close bag">
+        ×
+      </button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+      <div class="subtotal">
+        <span>Estimated total</span>
+        <strong id="cartSubtotal">GH₵0.00</strong>
+      </div>
+
+      <p class="fine-print">
+        A fixed delivery fee of GH₵35 is added to each order.
+      </p>
+
+      <button class="btn btn-gold full" id="checkoutButton" type="button">
+        CONTINUE TO CHECKOUT
+      </button>
+
+      <button class="continue-link" id="continueShopping" type="button">
+        Continue shopping
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <section
+    class="checkout-modal"
+    id="checkoutModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="checkoutTitle"
+    aria-hidden="true"
+    inert
+  >
+
+    <div class="checkout-head">
+
+      <div>
+        <p class="eyebrow gold-text">ALMOST YOURS</p>
+        <h2 id="checkoutTitle">Checkout</h2>
+      </div>
+
+      <button
+        class="icon-button"
+        id="closeCheckout"
+        type="button"
+        aria-label="Close checkout"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <form id="checkoutForm">
+
+      <!-- CUSTOMER INFORMATION -->
+      <div class="form-grid">
+
+        <label>
+          Full name
+          <input
+            name="name"
+            required
+            placeholder="Your full name"
+          >
+        </label>
+
+        <label>
+          Phone number
+          <input
+            name="phone"
+            type="tel"
+            required
+            placeholder="e.g. 024 000 0000"
+          >
+        </label>
+
+        <label class="wide">
+          Email address
+          <input
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+          >
+        </label>
+
+        <label class="wide">
+          Delivery location / address
+          <textarea
+            name="address"
+            required
+            rows="2"
+            placeholder="Town, area and delivery address"
+          ></textarea>
+        </label>
+
+      </div>
+
+      <!-- CASH ON DELIVERY ONLY -->
+      <fieldset class="payment-fieldset">
+
+        <legend>Payment Method</legend>
+
+        <label class="payment-option">
+
+          <input
+            type="radio"
+            name="payment"
+            value="Cash on delivery"
+            checked
+          >
+
+          <span>
+            <b>Cash on Delivery</b>
+            <small>Pay when your order arrives.</small>
+          </span>
+
+        </label>
+
+        <p class="fine-print">
+          Payment will be collected when your order is delivered.
+        </p>
+
+      </fieldset>
+
+      <!-- ORDER TOTAL -->
+      <div class="checkout-total">
+        <span>Order total</span>
+        <strong id="checkoutSubtotal">GH₵0.00</strong>
+      </div>
+
+      <button class="btn btn-gold full" type="submit">
+        PLACE DEMO ORDER
+      </button>
+
+      <p class="fine-print">
+        Demo checkout: your order summary is generated on this device only.
+        No order is automatically sent to GOD'S GRACE.
+        Cash on Delivery is the only available payment method.
+        Online payment options may be introduced in the future.
+      </p>
+
+    </form>
+
+  </section>
+
+  <!-- NOTIFICATION -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

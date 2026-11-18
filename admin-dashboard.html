@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GG Vintage | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js" defer></script>
+    <script src="admin-dashboard.js" defer></script>
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+        <div class="brand">
+            <h1>GG <span>VINTAGE</span></h1>
+            <p>STORE MANAGEMENT</p>
+        </div>
+
+        <button type="button" id="adminLogoutButton" class="logout-button">
+            Logout
+        </button>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+            <h2>Administrator Dashboard</h2>
+            <p>Welcome back, <span id="adminName">Administrator</span>.</p>
+        </section>
+
+        <section class="dashboard-stats">
+
+            <div class="stat-card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Products</h3>
+                <p id="activeProducts">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Stock</h3>
+                <p id="totalStock">0</p>
+            </div>
+
+        </section>
+
+        <section class="product-management">
+
+            <div class="section-heading">
+                <h2>Product Management</h2>
+
+                <button
+                    type="button"
+                    id="addProductButton"
+                    class="primary-button">
+                    + Add Product
+                </button>
+            </div>
+
+            <div id="productFormContainer" hidden>
+
+                <h3 id="formTitle">Add New Product</h3>
+
+                <form id="productForm">
+
+                    <input type="hidden" id="productId">
+
+                    <label for="productName">Product Name</label>
+                    <input id="productName" type="text" required>
+
+                    <label for="productCategory">Category</label>
+                    <select id="productCategory" required>
+                        <option value="t-shirts">T-Shirts</option>
+                        <option value="hoodies">Hoodies</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+
+                    <label for="productPrice">Price (GH₵)</label>
+                    <input
+                        id="productPrice"
+                        type="number"
+                        min="0.01"
+                        step="0.01"
+                        required>
+
+                    <label for="productColor">Color</label>
+                    <input id="productColor" type="text" required>
+
+                    <label for="productSizes">Sizes (comma separated)</label>
+                    <input
+                        id="productSizes"
+                        type="text"
+                        placeholder="S, M, L, XL, XXL">
+
+                    <label for="productStock">Stock Quantity</label>
+                    <input
+                        id="productStock"
+                        type="number"
+                        min="0"
+                        step="1"
+                        required>
+
+                    <label for="productImage">Image Path</label>
+                    <input
+                        id="productImage"
+                        type="text"
+                        placeholder="assets/tee-black.svg"
+                        required>
+
+                    <label for="productDescription">Description</label>
+                    <textarea id="productDescription" rows="3"></textarea>
+
+                    <label class="availability-label">
+                        <input id="productActive" type="checkbox" checked>
+                        Product is active
+                    </label>
+
+                    <button type="submit" id="saveProductButton">
+                        Save Product
+                    </button>
+
+                    <button type="button" id="cancelProductButton">
+                        Cancel
+                    </button>
+
+                </form>
+
+            </div>
+
+            <p id="dashboardMessage" role="status" aria-live="polite"></p>
+
+            <div class="table-wrapper">
+
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="productTableBody">
+                        <tr>
+                            <td colspan="5">Loading products...</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
